@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolia-Website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+       }
+        header{
+            width: 100%;
+            height: 100%;
+            font-family: sans-serif;
+        } 
+        nav{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 25px;
+        
+        }
+        .logo{
+            font-size: 2em;
+        }
+        .logo span{
+            color: seagreen;
+        }
+        .mid a{
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            position: relative;
+
+        }
+        .mid a::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-top: 2px solid black;
+            transition: .3s linear;
+
+        }
+        .mid a:hover::before{
+            width: 100%;
+        }
+        .subscribe a{
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 25px;
+            background: black;
+            color: white;
+            border-radius: 8px;
+            transition: .3s ease-in-out;
+
+        }
+        .subscribe a:hover{
+            background: transparent;
+            border: 2px solid black;
+            color: black;
+
+        }
+        .h-text{
+            width: 100%;
+            height: 70%;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            font-size: 25px;
+
+        }
+        .h-text h1{
+            font-size: 3rem;
+        }
+        .h-text span{
+            color: seagreen;
+        }
+        .h-text a{
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            letter-spacing: 4px;
+            position: relative;
+        }
+        .h-text a::before{
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 100%;
+            height: 100%;
+            background: seagreen;
+            border: 2px solid black;
+            z-index: -1;
+
+        }
+        #man{
+            position:absolute;
+            left:400px;
+            top: 450px;
+            border-radius: 5px;
+    
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> Design<span>Lab</span> </div>
+            <div class="mid">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">contact</a>
+                <a href="#">skills</a>
+
+            </div>
+            <div class="subscribe">
+                <a href="#">Subscribe now</a>
+            </div>
+        </nav>
+    </header>
+    <section class="h-text">
+        <div class="left">
+<p>I'am a</p>
+<h1>Front End Deve<span>loper</span></h1>
+<p>Youtuber and Blogger</p><br>
+<a href="#">Download cv</a>
+        </div>
+        <div class="rihgt">
+         <img src="./img/g  girl.jpg" width="100%" height="60%">
+         </div>
+    </section>
+    <img src="./img/CG.png"  width="200" id="man">
+</body>
+</html>
